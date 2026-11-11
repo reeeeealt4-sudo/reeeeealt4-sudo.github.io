@@ -20,11 +20,19 @@
   <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>, and Google's handling of data is
   described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
+  <h2>TikTok</h2>
+  <p>The app uses TikTok's Login Kit and Content Posting API to publish videos to the operator's own TikTok
+  accounts. TikTok's handling of data is described in the
+  <a href="https://www.tiktok.com/legal/privacy-policy">TikTok Privacy Policy</a>.</p>
+
   <h2>What data the app accesses</h2>
   <ul>
     <li>OAuth access and refresh tokens for the operator's YouTube channels, used solely to upload videos
     and read the connected channel's name.</li>
     <li>Public data from the YouTube Data API (titles of publicly listed videos) to research trending topics.</li>
+    <li>OAuth access and refresh tokens for the operator's TikTok accounts, plus basic profile information
+    (scope <code>user.info.basic</code>) and the account's available posting options, used solely to publish
+    videos (scopes <code>video.upload</code> and <code>video.publish</code>).</li>
   </ul>
 
   <h2>How data is stored and shared</h2>
@@ -33,11 +41,13 @@
 
   <h2>Revoking access</h2>
   <p>Access can be revoked at any time at
-  <a href="https://myaccount.google.com/permissions">Google Account permissions</a>. Deleting the app's
-  local token files also removes all stored access.</p>
+  <a href="https://myaccount.google.com/permissions">Google Account permissions</a> (YouTube) or in the TikTok
+  app under Settings and privacy &rarr; Security &rarr; Apps and services permissions (TikTok). Deleting the
+  app's local token files also removes all stored access.</p>
 
   <h2>Contact</h2>
-  <p>Questions about this policy can be sent through the "About" page of the connected YouTube channels.</p>
+  <p>Questions about this policy can be sent through the "About" page of the connected YouTube channels
+  or a direct message to the connected TikTok accounts.</p>
 
   <nav><a href="index.html">Home</a> &middot; <a href="terms.html">Terms of Service</a></nav>
 </main>
