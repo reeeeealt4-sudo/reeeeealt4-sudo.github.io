@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Connecting TikTok</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Connecting TikTok&hellip;</h1>
+  <p class="muted">Returning you to the Shorts Pipeline app on this computer.</p>
+  <p class="muted">If nothing happens, make sure the approval page is running on this computer, then
+  <a id="manual" href="#">click here</a>.</p>
+</main>
+<script>
+  // TikTok sends the one-time login code here; hand it to the local approval page unchanged.
+  // Nothing is stored or sent anywhere else.
+  var target = "http://localhost:8723/callback/" + window.location.search;
+  document.getElementById("manual").href = target;
+  window.location.replace(target);
+</script>
+</body>
+</html>
